@@ -15,22 +15,22 @@ const Services = () => {
 
     const services = [
         {
-            title: "Sustainable Building",
+            title: "Turnkey Projects",
             image: "https://images.unsplash.com/photo-1709418440123-270070054fb2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D",
             description: "Eco-friendly architectural solutions",
         },
         {
-            title: "Renovations & Remodeling",
+            title: "Full Fit-Out Projects",
             image: "https://images.unsplash.com/photo-1709418440119-96055db3d645?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
             description: "Transform existing spaces",
         },
         {
-            title: "Custom Construction",
+            title: "Interior Design & Execution",
             image: "https://images.unsplash.com/photo-1709418440197-fb76ad8dd8a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D",
             description: "Bespoke building solutions",
         },
         {
-            title: "Project Management",
+            title: "Bespoke Joinery Projects",
             image: "https://images.unsplash.com/photo-1709418440159-9958a213324e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D",
             description: "End-to-end oversight",
         },
@@ -40,7 +40,7 @@ const Services = () => {
             description: "Comprehensive architectural design",
         },
         {
-            title: "Furniture & Decor",
+            title: "Project Management ",
             image: "https://images.unsplash.com/photo-1487015307662-6ce6210680f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnVybml0dXJlfGVufDB8fDB8fHww",
             description: "Interior styling solutions",
         },
@@ -68,9 +68,31 @@ const Services = () => {
     }, []);
 
     return (
-        <div className=' text-white'>
-            <Heading text='Our Services' url='https://cdn.pixabay.com/video/2022/02/13/107573-678540733_tiny.mp4' />
+        <div className='text-white'>
+            <Heading text='Our Services' url='https://cdn.pixabay.com/video/2024/02/20/201281-915375202_large.mp4' />
+
             <section className="container mx-auto px-4 py-16">
+                {/* Add new content here */}
+                <div className="text-gray-200 leading-relaxed space-y-4 mb-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
+                    <p><strong className='text-3xl font-medium'>Turnkey Projects</strong><br />
+                        UPLIFT provides comprehensive turnkey solutions, managing every aspect of your project from initial concept to final handover. Our team takes care of design, sourcing, project management, and execution, ensuring a seamless process and a fully completed space that’s ready to use.</p>
+
+                    <p><strong className='text-3xl font-medium'>Design Services</strong><br />
+                        Our design services are tailored to create unique, inspired spaces that reflect your vision. From concept development and space planning to detailed design layouts, we work closely with clients to bring their ideas to life with creativity, precision, and attention to detail.</p>
+
+                    <p><strong className='text-3xl font-medium'>Project Management Services</strong><br />
+                        We understand that effective project management is essential for a successful outcome. Our experienced project managers oversee every detail, coordinating teams and resources to ensure projects are delivered on time, within budget, and to the highest standards.</p>
+
+                    <p><strong className='text-3xl font-medium'>Fit-Out Projects</strong><br />
+                        Our fit-out services are designed to transform spaces into fully functional, stylish interiors. We handle all aspects of the fit-out process, from layout adjustments and finishes to furnishings, creating cohesive spaces that meet both aesthetic and practical needs.</p>
+
+                    <p><strong className='text-3xl font-medium'>Bespoke Joinery Projects</strong><br />
+                        UPLIFT specializes in bespoke joinery solutions that add a personalized touch to your space. Our craftsmen work with high-quality materials to create custom cabinetry, furniture, and woodwork tailored to fit seamlessly into your interior design, blending beauty with functionality.</p>
+                    <p><strong className='text-3xl font-medium'>Sustainable Design Solutions
+                    </strong><br />
+                        Our sustainable design solutions focus on creating energy-efficient and eco-friendly buildings that not only reduce environmental impact but also promote healthier living and working spaces. From incorporating renewable energy sources and water-saving systems to using sustainable materials.</p>
+                </div>
+
                 <div className="max-w-2xl mx-auto text-center mb-12">
                     <motion.h2
                         initial={{ opacity: 0, x: -100 }}
@@ -78,7 +100,7 @@ const Services = () => {
                         transition={{ duration: 1 }} // Immediate fade in
                         className="text-3xl md:text-4xl font-medium leading-tight"
                     >
-                        Architects excited about beauty affordability sustainability.
+                        Architects excited about beauty, affordability, and sustainability.
                     </motion.h2>
                 </div>
 
@@ -105,6 +127,8 @@ const Services = () => {
                     ))}
                 </div>
             </section>
+
+            {/* Skills section */}
             <section className="py-16 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto" ref={ref}>
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     <motion.div
@@ -116,7 +140,7 @@ const Services = () => {
                         <h2 className="text-sm uppercase tracking-wider text-gray-300">OUR SKILLS</h2>
                         <h3 className="text-4xl font-medium tracking-tight">We are skilful at all essentials.</h3>
                         <p className="text-gray-300 leading-relaxed">
-                            Our expertise includes architecture, planning, structural engineering, interior design, sustainable design, building restoration and construction services.
+                            Our expertise includes architecture, planning, structural engineering, interior design, sustainable design, building restoration, and construction services.
                         </p>
                     </motion.div>
 
@@ -128,18 +152,14 @@ const Services = () => {
                     >
                         {skills.map((skill) => (
                             <div key={skill.name} className="space-y-2">
-                                <div className="flex justify-between items-center">
-                                    <span className="text-sm font-medium">{skill.name}</span>
-                                    <span className="text-sm text-gray-200">{skill.percentage}%</span>
-                                </div>
-                                <div className="h-1 bg-gray-500 rounded-full overflow-hidden">
+                                <h4 className="text-xl font-medium text-gray-300">{skill.name}</h4>
+                                <div className="h-1 bg-gray-400">
                                     <div
-                                        className="h-full bg-white transition-all duration-1000 ease-out rounded-full"
-                                        style={{
-                                            width: isVisible ? `${skill.percentage}%` : "0%",
-                                        }}
+                                        className="h-full bg-white"
+                                        style={{ width: `${skill.percentage}%` }}
                                     />
                                 </div>
+                                <p className="text-gray-400 text-sm mt-2">{skill.percentage}% Expertise</p>
                             </div>
                         ))}
                     </motion.div>

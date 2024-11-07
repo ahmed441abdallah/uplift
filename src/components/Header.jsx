@@ -26,11 +26,6 @@ const Header = () => {
                 <div className="flex flex-1 items-center justify-end md:justify-between">
                     <nav aria-label="Global" className="hidden md:block font-mono font-bold uppercase">
                         <ul className="flex items-center gap-6 text-sm">
-                            <li>
-                                <Link href="/portfolio" className="text-[#ADB7BE] transition hover:text-gray-500/75">
-                                    portfolio
-                                </Link>
-                            </li>
 
                             <li>
                                 <Link href="/about" className="text-[#ADB7BE] transition hover:text-gray-500/75">
@@ -43,13 +38,18 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/blog" className="text-[#ADB7BE] transition hover:text-gray-500/75">
+                                <Link href="/projects" className="text-[#ADB7BE] transition hover:text-gray-500/75">
                                     Projects
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/contact" className="text-[#ADB7BE] transition hover:text-gray-500/75">
                                     Contact
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/faq" className="text-[#ADB7BE] transition hover:text-gray-500/75">
+                                    Faq
                                 </Link>
                             </li>
                         </ul>

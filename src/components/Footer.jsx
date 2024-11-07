@@ -2,13 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import { Modal } from './animated-modal'
 import { AnimatedModalDemo } from './AnimatedModalDemo'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
         <footer className='grid grid-cols-1 sm:grid-cols-4 border-t text-primary p-20 gap-8'>
             <div className='col-span-1 sm:col-span-2 mt-10'>
-                <Image alt='logo' src='/03.png' width={200} height={100} className=' object-cover mb-2'></Image>
-                <h1 className='text-5xl mb-4 w-full sm:w-[80%] uppercase'>Recognizing the need is the primary condition</h1>
+                <Image alt='logo' src='/logo.png' width={100} height={100} className=' object-cover mb-2'></Image>
                 <p className=' leading-6 w-full sm:w-3/4 text-gray-300 tracking-wider'>Welcome to Uplift — your go-to platform for interior design inspiration, planning, and execution. Our mission is to make interior design accessible, enjoyable, and empowering for everyone, regardless of their skill level or budget.</p>
                 <ul className="mt-8 flex gap-6">
                     <li>
@@ -49,43 +49,31 @@ const Footer = () => {
                         </a>
                     </li>
 
-                    <li>
-                        <a
-                            href="#"
-                            rel="noreferrer"
-                            target="_blank"
-                            className="text-gray-300 transition hover:opacity-75"
-                        >
-                            <span className="sr-only">Twitter</span>
 
-                            <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path
-                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                                />
-                            </svg>
-                        </a>
-                    </li>
                 </ul>
             </div>
             <div className='col-span-1  mt-10'>
                 <ul className='gap-2 flex flex-col font-sans text-gray-300'>
                     <li className='text-2xl font-medium  mb-4 text-white uppercase'>Contact</li>
-                    <li>A: Seestrasse 21, Zurich, Switzerland</li>
-                    <li>AE: tadao@example.com</li>
-                    <li>T: 99 4 11 123 456</li>
-                    <li>T: 99 4 11 123 456</li>
-                    <li>H: Tuesday to Friday 11am - 6pm</li>
+                    <li>A:  Dubai, United Arab Emirates</li>
+                    <li>EA: info@upliftinteriorsae.com</li>
+                    <li>T: +971 588320428</li>
+                    <li>T: +971564240015</li>
                 </ul>
 
 
             </div>
             <div className='col-span-1  mt-10'>
                 <ul className='gap-2 flex flex-col font-sans text-gray-300'>
-                    <li className='text-2xl font-medium   mb-4 text-white uppercase'>Projects</li>
-                    <li>Residential</li>
-                    <li>Interior</li>
-                    <li>Interior</li>
-                    <li>Reuse</li>
+                    <li className='text-2xl font-medium   mb-4 text-white uppercase'> Links</li>
+                    <Link href='/about'><li>About</li>
+                    </Link>
+                    <Link href='/services'><li>Services</li>
+                    </Link>
+                    <Link href='/contact'><li>Contact</li>
+                    </Link>
+                    <Link href="/projects"><li>Projects</li>
+                    </Link>
                 </ul>
                 <AnimatedModalDemo />
 

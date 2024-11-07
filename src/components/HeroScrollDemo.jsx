@@ -22,7 +22,7 @@ export function HeroScrollDemo() {
                     src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/port-custom-3-gallery-img-5.jpg"
                     height={720}
                     width={1400}
-                    className="mx-auto rounded-2xl object-cover h-full w-full"
+                    className="mx-auto  object-cover h-full w-full"
                     draggable={false} />
             </ContainerScroll>
         </div>)

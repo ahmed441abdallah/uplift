@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const SERVICES = [
@@ -9,7 +10,7 @@ const SERVICES = [
     },
     {
         id: 2,
-        title: '3d modeling',
+        title: 'Fit-Out',
         image: "https://images.pexels.com/photos/774548/pexels-photo-774548.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
@@ -67,12 +68,12 @@ const Divider = () => {
                                 Uncover the potential of every room with our all-in-one interior design platform. Whether you are refreshing a single room or styling an entire home, you’ll find tailored inspiration, practical tools, and expert advice to guide you every step of the way. Start building your dream home today.
                             </p>
 
-                            <a
-                                href="#"
+                            <Link
+                                href="/projects"
                                 className="mt-8 inline-block rounded bg-white text-black px-12 py-3 text-sm font-medium  transition hover:bg-transparent hover:text-white focus:outline-none focus:ring focus:ring-yellow-400"
                             >
                                 Explore
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

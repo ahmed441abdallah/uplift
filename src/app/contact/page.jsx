@@ -4,10 +4,11 @@ import { MapProvider } from '@/components/map-provider';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-
+import toast, { Toaster } from 'react-hot-toast';
+import Heading from '@/components/Heading';
 
 const Contact = () => {
-
+    const [loading, setLoading] = useState(false);
     const [contactData, setContactData] = useState({
         name: '',
         email: '',
@@ -23,34 +24,42 @@ const Contact = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        setLoading(true);
         const serviceId = 'service_jpovben';
         const templateId = 'template_a2oc0wn';
         const publicKey = '0dxipNTfzMtq_j2Aj';
         const templateParams = {
-            from_name: contactData.name,
-            from_email: contactData.email,
+            user_name: contactData.name,
+            user_email: contactData.email,
+            user_phone: contactData.phone,
             to_name: 'Uplift',
             message: contactData.message,
         };
-
         emailjs
             .send(serviceId, templateId, templateParams,
                 publicKey)
             .then(
                 (res) => {
-                    console.log('SUCCESS!', res);
+                    setLoading(false);
+                    toast.success('Message send successfully');
+                    setContactData({
+                        name: '',
+                        email: '',
+                        phone: '',
+                        message: ''
+                    });
+
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    toast.error('Failed to send message');
                 },
             );
     }
     return (
-        <div className='p-16 sm:p-32 text-primary'>
-            <MapProvider>
-                <Map></Map>
-            </MapProvider>
-            <section className='grid grid-cols-1 sm:grid-cols-2 mt-8 gap-4'>
+        <div className='text-primary'>
+            <Heading text="Contact Us " url="https://cdn.pixabay.com/video/2020/02/05/31956-389724705_tiny.mp4" />
+
+            <section className='pt-16 sm:p-32   grid grid-cols-1 sm:grid-cols-2 mt-8 gap-4 mb-4'>
                 <div>
                     <Image alt='contact' src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/07/h1-img-14.png" width={700} height={600}></Image>
                 </div>
@@ -114,8 +123,9 @@ const Contact = () => {
 
                         <div className="mt-4">
                             <button
+                                disabled={loading}
                                 type="submit"
-                                className="inline-block w-full border rounded-lg  bg-transparent px-5 py-3 font-medium text-white sm:w-auto"
+                                className="inline-block disabled:cursor-not-allowed w-full border rounded-lg  bg-transparent px-5 py-3 font-medium text-white sm:w-auto"
                             >
                                 Send Message
                             </button>
@@ -123,7 +133,13 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
-
+            <MapProvider>
+                <Map></Map>
+            </MapProvider>
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
         </div>
     );
 };

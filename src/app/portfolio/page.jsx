@@ -154,14 +154,15 @@ const Portfolio = () => {
                     'https://cdn.pixabay.com/photo/2021/12/25/13/09/living-room-6893062_640.jpg',
                     'https://cdn.pixabay.com/photo/2016/11/22/19/11/brick-wall-1850095_640.jpg',
                     'https://cdn.pixabay.com/photo/2021/12/25/13/11/living-room-6893089_640.jpg',
-                    'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg',
+                    'https://cdn.pixabay.com/photo/2022/04/09/13/35/living-room-7121425_640.jpg',
                     'https://cdn.pixabay.com/photo/2024/09/25/13/35/living-room-9073734_640.jpg',
                     'https://cdn.pixabay.com/photo/2019/05/24/11/00/interior-4226020_640.jpg',
                     'https://cdn.pixabay.com/photo/2021/12/25/13/08/real-estate-6893060_640.jpg',
                     'https://cdn.pixabay.com/photo/2020/08/28/06/13/building-5523630_640.jpg',
                     'https://cdn.pixabay.com/photo/2017/08/01/09/02/house-2563735_640.jpg',
                     'https://cdn.pixabay.com/photo/2024/01/11/13/55/living-room-8501757_640.jpg',
-                    'https://cdn.pixabay.com/photo/2024/01/29/08/21/living-room-8539237_640.jpg'
+                    'https://cdn.pixabay.com/photo/2024/01/29/08/21/living-room-8539237_640.jpg',
+                    "https://cdn.pixabay.com/photo/2018/01/22/08/55/modern-minimalist-kitchen-3098477_1280.jpg",
                 ].map((src, index) => (
                     <div key={index} className="grid gap-4">
                         <Image
@@ -169,7 +170,7 @@ const Portfolio = () => {
                             height={300}
                             className="h-auto max-w-full rounded-lg"
                             src={src}
-                            alt=""
+                            alt="portfolio"
                         />
                     </div>
                 ))}

@@ -1,4 +1,5 @@
 'use client';
+import Heading from '@/components/Heading';
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
@@ -30,8 +31,10 @@ const Faq = () => {
     ]
 
     return (
-        <div className="p-20 sm:p-32 text-white">
-            <section>
+        <div className=" text-white">
+            <Heading text="FAQ " url="https://cdn.pixabay.com/video/2024/06/01/214888_tiny.mp4" />
+
+            <section className='p-6 sm:p-32'>
                 <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
@@ -49,7 +52,7 @@ const Faq = () => {
                                 alt="faq"
                                 width={600}
                                 height={400}
-                                className="w-full h-[600px] object-cover rounded-xl"
+                                className="w-full h-[400px] sm:h-[600px] object-cover rounded-xl"
                                 src="https://cdn.pixabay.com/photo/2024/03/26/18/56/interior-design-8657614_640.png"
                             />
                         </div>

@@ -1,3 +1,4 @@
+import ArchitectureFeatures from "@/components/ArchitectureFeatures";
 import Divider from "@/components/Divider";
 import { HeroParallaxDemo } from "@/components/HeroParallaxDemo";
 import { HeroScrollDemo } from "@/components/HeroScrollDemo";
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroScrollDemo />
       <ProjectsSlider />
       <NewArrival />
+      <ArchitectureFeatures />
     </main>
   );
 }

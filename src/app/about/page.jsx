@@ -8,22 +8,22 @@ import Heading from "@/components/Heading";
 const OFFERS = [
     {
         id: 1,
-        title: "Interior",
+        title: "RESIDENTIAL",
         image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h5-photo-feed-img-6.jpg"
     },
     {
         id: 2,
-        title: "Design",
+        title: "RETAIL",
         image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h5-photo-feed-img-4.jpg"
     },
     {
         id: 3,
-        title: "Planning",
+        title: " FOOD & BEVERAGE ",
         image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h5-photo-feed-img-2.jpg"
     },
     {
         id: 4,
-        title: "Exterior",
+        title: "CORPORATE",
         image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h5-photo-feed-img-5.jpg"
     }
 ];
@@ -34,14 +34,14 @@ const About = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsFirstAnimationComplete(true);
-        }, 3000); // Adjust the delay to match the duration of your first animation
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
 
     return (
         <div className=" text-primary">
-            <Heading text="About Uplift" url="https://cdn.pixabay.com/video/2023/04/21/159948-820010982_large.mp4" />
+            <Heading text="About " url="https://cdn.pixabay.com/video/2021/10/12/91744-636709154_tiny.mp4" />
             <section>
                 <motion.div
                     className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
@@ -57,8 +57,7 @@ const About = () => {
                         transition={{ duration: 1, delay: 0.3 }}
                     >
                         <h2 className="text-3xl font-medium sm:text-4xl">
-                            Personalized Design Journeys
-                        </h2>
+                            About UPLIFT for Idecoration and Execution L.L.C.                        </h2>
                     </motion.div>
 
                     <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -89,7 +88,8 @@ const About = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 1, delay: 0.6 }}
                                 >
-                                    Whether you’re a design enthusiast, a DIYer, or just starting out, [Web App Name] provides everything you need to turn your vision into reality. Our platform goes beyond inspiration, offering practical tools like 3D room visualizers, budget planners, and interactive mood boards. We’re passionate about helping you create spaces that are not only beautiful but also functional and true to you.
+                                    Established in 2023, UPLIFT for Decoration and Execution L.L.C. is a premier interior design and fit-out company based in Dubai, UAE. We specialize in transforming spaces through innovative design and meticulous execution, offering a seamless experience from concept to completion. Our services encompass everything from turnkey solutions to full fit-out projects, allowing clients to enjoy beautifully crafted spaces without the stress of managing every detail.
+
                                 </motion.p>
 
                                 <motion.p
