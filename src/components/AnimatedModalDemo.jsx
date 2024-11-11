@@ -4,16 +4,15 @@ import {
     Modal,
     ModalBody,
     ModalContent,
-    ModalFooter,
     ModalTrigger,
 } from "./animated-modal";
-import { CircleHelp, Mail, MessageCircleMore, ScrollText, StickyNote } from "lucide-react";
+import { CircleHelp, Mail, MailIcon, MapPin, PhoneCall, StickyNote } from "lucide-react";
 import ChatButton from "./chatbtn";
 import Link from "next/link";
 
 export function AnimatedModalDemo() {
     return (
-        (<div className="py-40  flex items-center justify-center">
+        (<div className=" py-2 flex items-center justify-center right-2  absolute">
             <Modal>
                 <ModalTrigger
                     className=" bg-white text-black flex justify-center group/modal-btn">
@@ -30,12 +29,7 @@ export function AnimatedModalDemo() {
                     <ModalContent>
                         <h4
                             className="text-lg md:text-2xl text-neutral-500 font-bold text-center mb-8">
-                            Quick links for {" "}
-                            <span
-                                className="px-1 py-0.5 rounded-md bg-neutral-800 border-neutral-700 border ">
-                                Uplift
-                            </span>{" "}
-                            Explore! ✈️
+                            Don’t hesitate to contact us
                         </h4>
                         <button className="text-black flex items-center justify-center gap-2 bg-gray-200 mb-2 p-2 rounded-xl">
                             FAQ <CircleHelp className="size-5" />
@@ -45,11 +39,16 @@ export function AnimatedModalDemo() {
                         </Link>
                         <ChatButton />
 
-                        <button className="text-black flex items-center justify-center gap-2 bg-gray-200 mb-2 p-2 rounded-xl">
+                        <Link href='/licence.pdf' rel="noopener noreferrer" target="_blank" className="text-black flex items-center justify-center gap-2 bg-gray-200 mb-2 p-2 rounded-xl">
                             License  <StickyNote className="size-5" />
-                        </button>
+                        </Link>
+                        <h1 className="text-black flex gap-2 items-center"> <PhoneCall size={15} />+971 588320428 </h1>
+                        <h1 className="text-black flex gap-2 items-center"> <PhoneCall size={15} />+971 564240015 </h1>
+                        <h1 className="text-black flex gap-2 items-center"> <MapPin size={15} />Dubai, United Arab Emirates </h1>
+                        <h1 className="text-black flex gap-2 items-center"> <MailIcon size={15} />info@upliftinteriorsae.com</h1>
 
                     </ModalContent>
+
 
                 </ModalBody>
             </Modal>

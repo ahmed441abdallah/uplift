@@ -4,6 +4,7 @@ import { Circle } from 'lucide-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import Heading from '@/components/Heading';
+import PricingCards from '@/components/pricingcards';
 
 const Services = () => {
     const skills = [
@@ -45,10 +46,8 @@ const Services = () => {
             description: "Interior styling solutions",
         },
     ];
-
     const [isVisible, setIsVisible] = useState(false);
     const ref = useRef(null);
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -72,7 +71,6 @@ const Services = () => {
             <Heading text='Our Services' url='https://cdn.pixabay.com/video/2024/02/20/201281-915375202_large.mp4' />
 
             <section className="container mx-auto px-4 py-16">
-                {/* Add new content here */}
                 <div className="text-gray-200 leading-relaxed space-y-4 mb-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
                     <p><strong className='text-3xl font-medium'>Turnkey Projects</strong><br />
                         UPLIFT provides comprehensive turnkey solutions, managing every aspect of your project from initial concept to final handover. Our team takes care of design, sourcing, project management, and execution, ensuring a seamless process and a fully completed space that’s ready to use.</p>
@@ -127,6 +125,7 @@ const Services = () => {
                     ))}
                 </div>
             </section>
+            <PricingCards />
 
             {/* Skills section */}
             <section className="py-16 px-4 md:px-6 lg:px-8 max-w-7xl mx-auto" ref={ref}>

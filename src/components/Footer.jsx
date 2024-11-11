@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className='grid grid-cols-1 sm:grid-cols-4 border-t text-primary p-20 gap-8'>
             <div className='col-span-1 sm:col-span-2 mt-10'>
                 <Image alt='logo' src='/logo.png' width={100} height={100} className=' object-cover mb-2'></Image>
-                <p className=' leading-6 w-full sm:w-3/4 text-gray-300 tracking-wider'>Welcome to Uplift — your go-to platform for interior design inspiration, planning, and execution. Our mission is to make interior design accessible, enjoyable, and empowering for everyone, regardless of their skill level or budget.</p>
+                <p className=' leading-6 w-full sm:w-3/4 text-gray-300 tracking-wider'>Welcome to Uplift UPLIFT for Decoration and Execution L.L.C. is a premier interior design and fit-out company based in Dubai, UAE. We specialize in transforming spaces through innovative design and meticulous execution, offering a seamless experience from concept to completion. Our services encompass everything from turnkey solutions to full fit-out projects</p>
                 <ul className="mt-8 flex gap-6">
                     <li>
                         <a
@@ -74,10 +74,14 @@ const Footer = () => {
                     </Link>
                     <Link href="/projects"><li>Projects</li>
                     </Link>
+                    <Link href="/faq"><li>Faq</li>
+                    </Link>
+                    <Link href="/licence.pdf" target='_blank'><li>license</li>
+                    </Link>
                 </ul>
-                <AnimatedModalDemo />
-
             </div>
+            <AnimatedModalDemo />
+            <p >© 2024 Uplift. ALL RIGHTS RESERVED </p>
         </footer>
     )
 }

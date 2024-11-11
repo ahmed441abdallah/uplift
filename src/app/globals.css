@@ -216,3 +216,20 @@ body {
       font: 400 8cqi / normal system-ui, sans-serif;
   }
 }
+.reason_icon__svg {
+  stroke-dasharray: 250;
+    stroke: #a8a8a8;
+    fill: #a8a8a8;
+    stroke-width: 1px;
+    stroke-dashoffset: -242;
+    transition: all 1.5s;
+}
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
