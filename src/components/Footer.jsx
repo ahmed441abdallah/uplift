@@ -1,0 +1,49 @@
+import Image from 'next/image'
+import React from 'react'
+import { Modal } from './animated-modal'
+import { AnimatedModalDemo } from './AnimatedModalDemo'
+import Link from 'next/link'
+
+const Footer = () => {
+    return (
+        <footer className='grid grid-cols-1 sm:grid-cols-4 border-t text-primary p-20 gap-8'>
+            <div className='col-span-1 sm:col-span-2 mt-10'>
+                <Image alt='logo' src='/logo.png' width={100} height={100} className=' object-cover mb-2'></Image>
+                <p className=' leading-6 w-full sm:w-3/4 text-gray-300 tracking-wider'>Welcome to Uplift UPLIFT for Decoration and Execution L.L.C. is a premier interior design and fit-out company based in Dubai, UAE. We specialize in transforming spaces through innovative design and meticulous execution, offering a seamless experience from concept to completion. Our services encompass everything from turnkey solutions to full fit-out projects</p>
+
+            </div>
+            <div className='col-span-1  mt-10'>
+                <ul className='gap-2 flex flex-col font-sans text-gray-300'>
+                    <li className='text-2xl font-medium  mb-4 text-white uppercase'>Contact</li>
+                    <li>A:  Dubai, United Arab Emirates</li>
+                    <li>EA: info@upliftinteriorsae.com</li>
+                    <li>T: +971 588320428</li>
+                    <li>T: +971564240015</li>
+                </ul>
+
+
+            </div>
+            <div className='col-span-1  mt-10'>
+                <ul className='gap-2 flex flex-col font-sans text-gray-300'>
+                    <li className='text-2xl font-medium   mb-4 text-white uppercase'> Links</li>
+                    <Link href='/about'><li>About</li>
+                    </Link>
+                    <Link href='/services'><li>Services</li>
+                    </Link>
+                    <Link href='/contact'><li>Contact</li>
+                    </Link>
+                    <Link href="/projects"><li>Projects</li>
+                    </Link>
+                    <Link href="/faq"><li>Faq</li>
+                    </Link>
+                    <Link href="/licence.pdf" target='_blank'><li>license</li>
+                    </Link>
+                </ul>
+            </div>
+            <AnimatedModalDemo />
+            <p >© 2024 Uplift. ALL RIGHTS RESERVED </p>
+        </footer>
+    )
+}
+
+export default Footer
