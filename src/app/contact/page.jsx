@@ -1,11 +1,10 @@
 'use client';
-import Map from '@/components/map';
-import { MapProvider } from '@/components/map-provider';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import Heading from '@/components/Heading';
+import Map from './map.jsx';
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
@@ -133,9 +132,7 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
-            <MapProvider>
-                <Map></Map>
-            </MapProvider>
+            <Map></Map>
             <Toaster
                 position="top-center"
                 reverseOrder={false}

@@ -3,6 +3,7 @@ import React from 'react'
 import { Modal } from './animated-modal'
 import { AnimatedModalDemo } from './AnimatedModalDemo'
 import Link from 'next/link'
+import { LocateFixedIcon, LocateIcon, Mail, MapPin, Phone } from 'lucide-react'
 
 const Footer = () => {
     return (
@@ -15,10 +16,10 @@ const Footer = () => {
             <div className='col-span-1  mt-10'>
                 <ul className='gap-2 flex flex-col font-sans text-gray-300'>
                     <li className='text-2xl font-medium  mb-4 text-white uppercase'>Contact</li>
-                    <li>A:  Dubai, United Arab Emirates</li>
-                    <li>EA: info@upliftinteriorsae.com</li>
-                    <li>T: +971 588320428</li>
-                    <li>T: +971564240015</li>
+                    <li className='flex gap-1 mb-2'><MapPin />  Dubai, United Arab Emirates</li>
+                    <li className='flex gap-1 mb-2'><Mail /> info@upliftinteriorsae.com</li>
+                    <li className='flex gap-1 mb-2'><Phone /> +971 588320428</li>
+                    <li className='flex gap-1'><Phone /> +971564240015</li>
                 </ul>
 
 

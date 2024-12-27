@@ -7,7 +7,6 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import Image from "next/image"
-import Category from "./category"
 
 export default function ArchitectureFeatures() {
     const [openSection, setOpenSection] = useState("turnkey-projects")
@@ -84,7 +83,6 @@ export default function ArchitectureFeatures() {
                     </Accordion>
                 </div>
             </div>
-            <Category />
         </div>
     )
 }
