@@ -19,7 +19,7 @@ export function HeroScrollDemo() {
                 }>
                 <Image
                     alt="villa"
-                    src="https://bodesstudio.com/wp-content/uploads/2024/07/1ys36592b203654031.669aa5f8a89d6.jpg"
+                    src="https://cdn.sanity.io/images/nukkh59q/production/e32616e75549381b92021b01250269af04d9043b-1759x1173.jpg?crop=&hotspot=&w=1280&h=854&auto=format"
                     height={720}
                     width={1400}
                     className="mx-auto rounded-2xl object-cover h-full w-full"

@@ -17,7 +17,7 @@ export default function ArchitectureFeatures() {
                 <Image
                     width={400}
                     height={400}
-                    src="https://cdn.pixabay.com/photo/2022/04/13/13/56/old-building-7130386_640.jpg"
+                    src="https://cdn.sanity.io/images/nukkh59q/production/3e8b4fdfa1f8a5f50ef18fc7c15a46ef1ca2c615-1478x1091.jpg?crop=&hotspot=&w=1280&h=945&auto=format"
                     alt="Modern architectural building"
                     className="h-[500px] w-[500px] object-cover rounded-lg shadow-lg "
                 />

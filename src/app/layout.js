@@ -1,7 +1,7 @@
 import { Khand } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/header/index.jsx";
 import { ProjectsProvider } from "../context/projectsContext.jsx";
 
 const khand = Khand({
