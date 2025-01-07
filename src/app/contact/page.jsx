@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import Heading from '@/components/Heading';
-import dynamic from 'next/dynamic';
-const GoogleMap = dynamic(() => import('./GoogleMap'), { ssr: false });
+import GoogleMap from './googleMap.jsx';
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
