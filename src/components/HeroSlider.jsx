@@ -5,12 +5,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 
 const slides = [
     {
-        image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h6-img-5-2048x829.jpg",
+        image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h2-port-img-1-1.jpg",
         title: "Unleash Your Creativity Design and Inspiration",
         subtitle: "Discover a world of design inspiration and practical tools that make transforming your space effortless, Whether you're planning a complete makeover or just looking for fresh ideas.",
     },
     {
-        image: "https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h4-photo-feed-3.jpg",
+        image: "https://i.postimg.cc/qvpkf3n2/Poliform-sofas-SAINT-GERMAIN-2024-01.webp",
         title: "EXPERIENCES & KNOWLEDGE INTEGRATED",
         subtitle: "Ready to turn your home into a space that reflects your unique style? Uplift combines inspiration, design tools, and expert advice to make interior design accessible and enjoyable.",
     },

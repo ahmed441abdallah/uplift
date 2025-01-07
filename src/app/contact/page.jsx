@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import Heading from '@/components/Heading';
-import Map from './map.jsx';
+import dynamic from 'next/dynamic';
+const GoogleMap = dynamic(() => import('./GoogleMap'), { ssr: false });
 
 const Contact = () => {
     const [loading, setLoading] = useState(false);
@@ -132,7 +133,7 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
-            <Map></Map>
+            <GoogleMap />
             <Toaster
                 position="top-center"
                 reverseOrder={false}

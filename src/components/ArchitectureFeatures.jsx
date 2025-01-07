@@ -82,6 +82,7 @@ export default function ArchitectureFeatures() {
                         </AccordionItem>
                     </Accordion>
                 </div>
+
             </div>
         </div>
     )

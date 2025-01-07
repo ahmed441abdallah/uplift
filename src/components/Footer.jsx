@@ -42,7 +42,7 @@ const Footer = () => {
                 </ul>
             </div>
             <AnimatedModalDemo />
-            <p >© 2024 Uplift. ALL RIGHTS RESERVED </p>
+            <p >© 2025 Uplift. ALL RIGHTS RESERVED </p>
         </footer>
     )
 }
