@@ -11,9 +11,11 @@ import BackgroundParallax from "../components/Background Parallax.jsx";
 import ZoomParallax from "../components/ZoomParallax.jsx";
 import { AnimatePresence } from "framer-motion";
 import Preloader from '@/components/Preloader/index.jsx'
+import GSAP from "@/components/GSAP";
+import FramerMotion from "@/components/FramerMotion";
+
 import { useEffect, useState } from "react";
 import SmoothParallaxScroll from "@/components/SmoothParallaxScroll/index.jsx";
-
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -46,6 +48,9 @@ export default function Home() {
       <ZoomParallax />
       <BackgroundParallax />
       <ArchitectureFeatures />
+      <GSAP></GSAP>
+      <FramerMotion />
+
     </main>
   );
 }
