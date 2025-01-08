@@ -9,12 +9,12 @@ const khand = Khand({
   weight: ["400", "700"],
   variable: "--font-khand",
   display: "swap",
-  fallback: ["Arial", "sans-serif"], // Add fallback fonts
+  fallback: ["Arial", "sans-serif"],
 });
 
 export const metadata = {
   title: "UpLift Interiors",
-  description: "A modern interior design studio",
+  description: "A modern interior  Design and Built company",
 };
 
 export default function RootLayout({ children }) {
