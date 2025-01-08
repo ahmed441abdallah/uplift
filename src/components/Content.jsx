@@ -30,7 +30,7 @@ const Section2 = () => {
 
 const Nav = () => {
     return (
-        <div className='flex shrink-0 gap-20'>
+        <div className='flex shrink-0 gap-10 sm:gap-20'>
             <div className='flex flex-col gap-2 mt-20'>
                 <h3 className='mb-2 uppercase text-[#ffffff80]'>About</h3>
                 <ul className='gap-2 flex flex-col font-sans text-gray-300'>
@@ -40,25 +40,23 @@ const Nav = () => {
                     <li className='flex gap-1 mb-2'><Phone /> +971 564240015</li>
                     <li className='flex gap-1 mb-2'><Phone /> +971 504397921</li>
                 </ul>
-
             </div>
             <div className='flex flex-col gap-2 mt-20'>
                 <h3 className='mb-2 uppercase text-[#ffffff80]'>Links</h3>
-                <Link href='/about'><li>About</li>
+                <Link href='/about'>About
                 </Link>
-                <Link href='/services'><li>Services</li>
+                <Link href='/services'>Services
                 </Link>
-                <Link href='/contact'><li>Contact</li>
+                <Link href='/contact'>Contact
                 </Link>
-                <Link href="/projects"><li>Projects</li>
+                <Link href="/projects">Projects
                 </Link>
-                <Link href="/faq"><li>Faq</li>
+                <Link href="/faq">FAQ
                 </Link>
-                <Link href="/licence.pdf" target='_blank'><li>license</li>
+                <Link href="/licence.pdf" target='_blank'>license
                 </Link>
-                <Link href='https://www.instagram.com/upliftinteriors_ae?igsh=YzI3azN0N2lmMjRr' target='_blank'><li>Instagram</li>
+                <Link href='https://www.instagram.com/upliftinteriors_ae?igsh=YzI3azN0N2lmMjRr' target='_blank'>Instagram
                 </Link>
-
             </div>
         </div >
     )
